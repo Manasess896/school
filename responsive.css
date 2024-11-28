@@ -1,0 +1,138 @@
+@media (min-width: 650px){
+ .openbarbtn{
+    display:none;
+  }  
+ .navbar{
+width: 100%;
+position: fixed;
+background-color:transparent;
+margin: auto;
+justify-content: center;
+background-color:yellow;
+display: flex;
+height: 80px;
+top: 0;
+border-top: 1px solid white;
+margin-top: 15vh;
+ } 
+ .navbar button{
+  padding: 1vw;
+  margin: 1%;
+  font-weight: bold;
+  font-size: 18px;
+ }
+ .navbar button:hover{
+  border-top: 2px solid black;
+ }
+ .closebarbtn{
+  display: none;
+ }
+
+.statistics{
+  display: flex;
+}
+.intro{
+  margin-top: 1vh;
+  float: left;
+}
+h1{
+  font-size: 1.6rem;
+  margin-left: 5vw;
+}
+.classimg img{
+  margin-top: 60px;
+}
+.imageslideshow{
+  width: 20vw;
+  height: 40vh;
+}
+.facilitybox {
+width: 20vw;
+
+}
+
+.class{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.event{
+  width: 20vw;
+  height: 40vh;
+}
+.contacts{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.socialicons{
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: grey;
+  color: white;
+  padding: 1vw;
+  scale: 0.8;
+  border-radius: 50%;
+}
+.admissionform{
+  border: 1px solid black;
+  width: 30vw;
+  margin: auto;
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  text-align: center;
+}
+.admissionform input{
+  border-radius: 5px;
+  margin: auto;
+  border: 2px solid black;
+  width: 70%;
+  height: 30%;
+}
+.newsletter{
+  border-radius: 1vw;
+  width:30vw;
+  height: 30vh;
+}
+.newsletter input{
+  border-top:0px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 1vw;
+}
+.newsletter ::placeholder{
+  text-transform: capitalize;
+}
+.newsletter h2{
+  font-size: 1rem;
+}
+.contactform{
+  width:30vw;
+}
+.contactform input{
+  padding: 1vw;
+}
+.details{
+  width:80%;
+  height: 10%;
+}
+.transferstudents input{
+  width:25vw;
+}
+.transferstudents{
+  width: 45%;
+}
+.playgroup,.preprimary,.primary{
+  width: 40vw;
+  margin: 5px;
+}
+
+.schoolcategory{
+  display: flex;
+}
+.firstview{
+  margin-top: 29vh;
+}
+}

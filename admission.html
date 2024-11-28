@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admission for spleng</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Add this to the head section of your HTML files -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+    </script>
+</head>
+<body>
+    <div class="admissions">
+        <h2 id="admissions">admission</h2>
+        <div class="transfers"></div>
+        <div class="logo-menu"> 
+            <img class="topimg" src="\images (2).jpeg" alt="">
+            <h1>spleng school</h1>
+            <button onclick="opennav()" class="openbarbtn" id="openbarbtn">&#9776;</button> 
+        </div>
+        <div class="navbar" id="navbar">
+            <span onclick="closenav()" class="closebarbtn">&times;</span>
+            <button><a href="/index.html">home</a></button>
+            <button onclick="scrolltoaboutus()">about us</button>
+            <button onclick="scrolltoprograms()">programs</button>
+            <button onclick="scrolltofacilities()">facilities</button>
+            <button onclick="scrolltoevents()">events</button>
+            <button><a href="admission.html">admission</a></button>
+            <button onclick="scrolltocontacts()">contact us</button>
+        </div> <br>
+        <div class="application">
+      <h2> APPLICATION AND JOINING PROCESS</h2>
+       <h3> ADMISSION PROCESS</h3>
+        <ul>
+            <li>Inquiry and Booking</li>
+            <li>Confirmation</li>
+            <li>Interviews and Assessment</li>
+            <li>Placement</li>
+        </ul>
+        <h4>ADMISSION REQUIREMENTS</h4>
+        <ul>
+            <li>Copy of Birth Certificate</li>
+            <li>2 Passport size Photos</li>
+            <li>Copy of Parent/Guardian National ID card or Passport</li>
+            <li>Portfolio with NEMIS Number and Academic Report</li>
+        </ul>
+    </div>
+    <div class="transferstudents" id="transferstudents">
+        <label style="margin:10px;" for="text">first name :</label> <br>
+        <input type="text" placeholder="first name" required> <br><br>
+        <label class="transferlabel" for="middle name">middle name:</label> <br>
+        <input type="text" placeholder="middle  name" required> <br><br>
+        <label for="surname">surname:</label> <br>
+        <input type="text" placeholder="surname"> <br><br>
+        <label for="class">class interested in:</label> <br>
+        <select name="class" id="class-select" required>
+            <option value="" disabled selected>--select class--</option>
+            <option value="PLAYGROUP">PLAYGROUP</option>
+            <option value="PP1">PP1</option>
+            <option value="PP2">PP2</option>
+            <option value="GRADE 1">GRADE 1</option>
+            <option value="GRADE 2">GRADE 2</option>
+            <option value="GRADE 3">GRADE 3</option>
+            <option value="GRADE 4">GRADE 4</option>
+            <option value="GRADE 5">GRADE 5</option>
+            <option value="GRADE 6">GRADE 6</option>
+            <option value="GRADE 7">GRADE 7</option>
+        </select> <br><br>
+        <label for="student-age">students age:</label> <br>
+        <input type="date" name="student-age"> <br><br>
+        <label for="students-gender">students gender:</label> <br>
+        <select name="students-gender" id="students-gender">
+            <option value="null" disabled selected>--select-gender--</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select> <br><br>
+        <label for="parents-name">parents name:</label> <br>
+        <input type="text" id="parents-name" placeholder="parents full name" required> <br><br>
+        <label for="parents-number">parent's contact:</label> <br>
+        <input type="number" placeholder="phone number" id="parents-phonenumber" required> <br><br>
+        <label for="parents email">parents email:</label> <br>
+        <input type="text" placeholder="parent.example@gmail.com" id="parents-email"> <br><br>
+        <label for="anythingelse">anything else you would like us to know?</label> <br>
+        <input type="text" id="transfermessage" placeholder="message"> <br><br>
+        <button class="applicationsubmitbtn" id="applicationsubmitbtn" type="submit">submit application</button>
+    </div>
+    <script type="module" src="config.js"></script>
+</body>
+</html>

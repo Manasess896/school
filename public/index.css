@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+word-wrap: none;
+}
+#loginForm{
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+.password,#password{
+    width: 90%;
+}
+#loginForm input{
+    margin:auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 90%;
+}
+#loginbtn{
+    margin-top: 10px;
+    padding: 1rem;
+    border-radius: 10px;
+   border: 0px;;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#loginForm h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#loginForm label{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+}
+@media screen and (min-width: 500px){
+    #loginForm{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 750px){
+    #loginForm{
+        width: 30%;
+    }
+}
+.showpassword input{
+    margin-top: 10px;
+    justify-content: left;
+    text-align: left;
+    margin-right: 10px;
+    border: #4CAF50;
+}
+.showpassword{
+   display: flex;
+   flex-wrap: nowrap;
+   white-space: nowrap;
+   justify-content: left;
+   align-items: left;
+   text-align: left;
+   text-transform: capitalize;
+}

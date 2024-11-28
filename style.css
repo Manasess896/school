@@ -1,0 +1,564 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar button {
+    display: block;
+    color: black;
+    font-size: 20px;    
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width:650px){
+    .navbar button{
+        display: block;
+    }
+    .statistics{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .class{
+        margin: auto;
+        width: 70vw;
+      }
+      .contactform{
+        margin-top: 30px;
+      }
+
+}
+.navbar{
+    background-color: grey;
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    top: 100px;
+    width: 0%;
+    height: 100%;
+    transition: 2s;
+    border: 0px;
+}
+.navbar a{text-decoration: none; color:black;}
+.openbarbtn{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size:9vw;
+    border: 0px;
+    background-color: transparent;
+    
+}
+.closebarbtn{
+ margin-left: 80%;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 50px;
+    z-index: 5;
+}
+button{
+    background-color: transparent;
+    border: 0px solid transparent;
+} 
+
+.logo-menu{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    background-color: yellow;
+    position: fixed;
+    width: 100%;
+    height: 15vh;
+    top: 0;
+    left: o;
+    right: 0;
+    z-index: 5;
+}
+.topimg{
+    width: 100px;
+    object-fit: cover;
+}
+h1{
+    text-align: center;
+    font-size: 1.3em;
+    color: black;
+    margin-left: 5vw;
+    top:50%;
+    bottom: 50%;
+    transform: translateY(-50%,-50%);
+
+}
+.statistics{
+    background-image: url("imageswftkyuk.png");
+    background-repeat: no-repeat;
+background-position:center ;
+    object-fit: cover;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    z-index: 0;
+    
+}
+.fa-group{
+    font-size: 10vw;
+    color: black;
+}
+.staff{
+    background-color:transparent;
+    backdrop-filter: blur(2px);
+    padding: 10px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+}
+.fa-child{
+    font-size: 10vw;
+    color: black;
+}
+.students ,.classes,.activities{
+    background-color:transparent;
+    padding: 4px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+    
+}
+.fa-book{
+    font-size: 10vw;
+    color: black;
+}
+.fa-rocket{
+    font-size: 10vw;
+    color: black;
+}
+.statisticsicon{
+    border: 1px solid rgb(0, 0, 0.1);
+    margin: 4%;
+    transition: transform 2s;
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+#countdownDisplay{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.intro{
+   margin-top:1vh;
+   text-transform: capitalize;
+}
+.info{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+.subject{
+    background-color: rgb(215, 87, 215);
+    border-radius: 5px;
+ padding: auto;
+    box-shadow: 0px 0px 10px 1px;
+    font-size: 1rem;
+    margin-top: 10px;
+   width: 200px;    
+}
+.subject:hover{
+    background-color: rgb(179, 8, 179);
+    color: black;
+}
+.subject h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+.subject h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+
+    .subject-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      
+      .subject-list li {
+        display: none; /* Hide all list items initially */
+      }
+      
+      button.viewmore {
+        margin-top: 0px;
+        padding: 8px 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      
+      button.viewmore:hover {
+        background-color: #45a049;
+      }
+      h2,h3,h4,h5,h6{
+        text-transform: uppercase;
+        text-align: center;
+        font-size:1.5rem;
+        font-weight: 1000;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+      }
+      .class h2{
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+ 
+      .classimg{
+        width: 50vw;
+        border:1px solid black;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 50px;
+        margin: 4px;
+        overflow: hidden;
+      }
+      .classimg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        justify-items: center;
+        align-self: center;
+      }
+      .slide{
+        display: none;
+      }
+      .rightbtn ,.leftbtn{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 4;
+        background-color: black;
+        color:white;
+        padding: 10px;
+      }
+      .rightbtn{
+        right: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .leftbtn{
+        left: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .playgroundcontainer{
+        position: relative;
+        overflow: hidden;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: nowrap;
+        height: auto;
+      }
+      .playgroundcontainer img{
+        object-fit: cover;
+        width: 100%;
+        height:100%;
+        display: none;
+      }
+      .playgroundslide{
+       display: none; 
+       width: 100%;
+      }
+      .transportcontainer{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      .transportcontainer img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    
+      }
+      .imageslideshow{
+        width: 70vw;
+        height: 30vh;
+      }
+      .cafeteriacontainer{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        overflow: hidden;
+      }
+        .cafeteriacontainer img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text{
+            z-index: 4;
+            position: absolute;
+          bottom: 0;
+          text-align: center;
+            background-color: rgb(255, 235, 255, 0.5);
+        }
+        .facilitybox{
+            width: 70vw;
+         border: 1px solid black;
+         padding: 1%;
+         margin-top: 30px;
+        }
+        .events{
+        margin-top: 20px;
+        width: 70vw;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: auto;
+        height: auto;
+        }
+        .event{
+            background-color: violet;
+            height: auto;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+            width:100%;
+            display: block;
+            text-transform: capitalize;
+        }
+        .contacts{
+            margin-top: 2%;
+        }
+        .socialicons{
+            text-decoration: none;
+            font-size: 2rem;
+            background-color: grey;
+            color: white;
+            padding: 5vw;
+            scale: 0.8;
+            border-radius: 50%;
+        }
+    
+     
+        .newsletterlabel{
+            text-transform: capitalize;
+        }
+        .newsletter{
+           border: 1px solid white ;
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
+            border-radius: 1vw;
+            width:70vw;
+            margin: auto;
+            height: auto;
+            margin-top: 30px;
+        }
+        .newsletter input{
+            border-top:0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 2px solid black;
+            width: 40vw;
+            padding: 10px;
+            border-radius: 1vw;
+        }
+       ::placeholder{
+            text-transform: capitalize;
+        }
+        .newsletter h2{
+            font-size: 1rem;
+        }
+        .newslettersubscribebtn{
+            background-color: green;
+            text-transform: capitalize;
+border-radius: 10px;
+padding: 10px;
+margin-top: 20px;
+        }
+        .contactform{
+            border:1px solid rgb(255, 255, 255);
+            padding: 10px;
+            border-radius:20px;
+            width:70vw;
+            margin: auto;
+        }
+        .contactform label{
+            text-transform: capitalize;
+        }
+        .contactform input{
+            padding: 2vw;
+margin-top: 15px;
+border-radius: 10px;
+        }
+        .details{
+            height: 5vh;
+width: 35vw;
+        }
+        .contacts{
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(26, 25, 28);
+            color: white;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-transform: capitalize;
+        }
+        label{
+            text-transform: capitalize;
+        }
+        .transferstudents{
+border: 1px solid black;
+backdrop-filter: blur(100px);
+padding: 20px;
+
+        }
+        .transferstudents input{
+ width: 60%;
+ padding: 10px;
+ margin-top: 20px;
+ border: 1px solid black;
+ border-radius: 0.4vw;
+        }
+        .transferlabel{
+        text-align: left;
+        margin: 5px;
+        }
+    .fileupload{
+        border: 1px solid black;
+        margin-top: 5px;
+        padding:10px;
+    }
+option{
+    padding: 10x;
+}
+#class-select,#students-gender{
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    text-transform: capitalize;
+}
+#class-select option{
+    border: 1px solid black;
+}
+.applicationsubmitbtn,.contactformsubmitbtn{
+    border: 0px;
+    padding: 20px;
+    background-color: green;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-transform:uppercase;
+}
+
+.event i{font-weight: bold;margin:5px; text-decoration: underline;font-family: monospace;font-size: 1rem;}
+.event span{font-weight: bolder; margin:5px; }
+#map {
+    height: 40vh; /* Set height for the map container */
+    width:100%;
+align-items: center;
+position: relative;
+  }
+  .application{
+    margin-top: 30px;
+  }
+  .playgroup,.preprimary,.primary{
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 50vw;
+    margin: auto;
+  }
+  .schoolcategory img{
+width: 100%;
+height: auto;
+object-fit: cover;
+  }
+  .firstview{
+    margin-top: 17vh;
+  }
+  .firstpanel{
+    background-color: yellow;
+    width: 90%;
+    color: black;
+text-decoration: none;
+padding: 20px;
+margin: auto;
+margin-top: 10px;
+text-transform: capitalize;
+white-space: nowrap;
+  }
+  .firstpanel a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: violet;
+    white-space: nowrap;
+    margin: 5px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.8s;
+    margin: 10px;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+#response-message {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}

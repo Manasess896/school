@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/9d3f00a5c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <div class="logo-menu"> 
+        <img class="topimg" src="\images (2).jpeg" alt="">
+        <h1>spleng school</h1>
+         <button onclick="opennav()" class="openbarbtn" id="openbarbtn"  >&#9776;</button> 
+    </div>
+    <div class="navbar" id="navbar">
+        <span onclick="closenav()" class="closebarbtn">&times;</span>
+<button onclick="scrolltoaboutus()">about us</button>
+<button onclick="scrolltoprograms()">programs</button>
+<button onclick="scrolltofacilities()">facilities</button>
+<button onclick="scrolltoevents()" >events</button>
+<button onclick="scrolltocontacts()" >contact us</button>
+    </div>
+    <div class="firstview">
+      We are a private Day primary School offering the 2-6-3-3-3 Curriculum. Our school is committed to providing a nurturing and stimulating environment where students can thrive academically, socially, and emotionally. We emphasize a holistic approach to education, ensuring that each child receives personalized attention and support to reach their full potential.
+      <button class="accordion">School motto</button>
+      <div class="accordion-content">
+          <p>school motto</p>
+      </div>
+      <button class="accordion">School vision</button>
+      <div class="accordion-content">
+          <p>school vision</p>
+      </div>
+      <button class="accordion">School location</button>
+      <div class="accordion-content" id="map">
+      </div>
+      <div class="firstpanel"> admission is ongoing 
+        <a href="/admission.html">enroll now</a>
+      </div>
+    </div>
+    <div class="intro" id="container" >
+      <br>
+        <h2 id="about-us">about us</h2>
+        <p>  Spleng School, a premier primary school in Kenya dedicated to providing quality education following the Kenyan curriculum. Our mission is to nurture and develop well-rounded students who excel academically and in co-curricular activities. </p>
+<P>Our experienced and dedicated teachers ensure that each student receives personalized attention to help them achieve their full potential.</P>
+
+        <P>In addition to our strong academic program, we provide a variety of co-curricular activities to foster the holistic development of our students.</P>
+<p> Join us and be part of a vibrant learning community where every child is valued and encouraged to excel.</p>
+    </div>
+    <div class="statistics">
+        <div class="staff  statisticsicon">
+        <span id="staff" class="fa fa-group">
+            </span><br>staff <br>
+            <div id="countdownDisplay"></div>
+        </div>
+        <div class="students  statisticsicon">
+            <span class="fa fa-child ">
+                </span>
+              <br>students <br>
+                <div id="stundentcountdown"></div>
+        </div>
+        <div class="classes   statisticsicon">
+            <span class="fa fa-book">
+                </span><br>courses <br>
+                <div id="coursecountdown"></div>
+            </div>
+                <div class="activities   statisticsicon">
+<span class="fa fa-rocket"></span><br>activities <br>
+<div id="activitiescountdown"></div>
+                </div>
+    </div>
+    </div>
+    <h3 id="programs">programs</h3>
+    <h2>school category</h2>
+    <div class="schoolcategory">
+      <div class="playgroup">
+        <img src="schoolcategoryimg\download (1)fgsd.jpeg" alt="">
+        <p>
+          Spleng School Play group is ideal for all children aged 2-3 years, providing a carefully planned introduction to the school life
+          
+          </p>
+      </div>
+      <div class="preprimary">
+        <img src="schoolcategoryimg\download.jpeg" alt="">
+        <p>
+          this includes childrem from the age of 3-5 
+        </p>
+      </div>
+      <div class="primary">
+        <img src="schoolcategoryimg\images (3)fwpj'gareg,b.jpeg" alt="">
+        This consists of children from grade 1 to 6
+      </div>
+      </div>
+    <div class="info" >
+        <div class="subject subjects">
+          <h2 style="text-align: center;">Subjects</h2>
+          <ul class="subject-list">
+            <li>Mathematics</li>
+            <li>English</li>
+            <li>Science</li>
+            <li>Social Studies</li>
+            <li>Computer Studies</li>
+            <li>Physical Education</li>
+            <li>Kiswahili</li>
+            <li>Religious Education (for all religions)</li>
+            <li>Life Skills</li>
+            <li>Creative Arts</li>
+            <li>Physical Education</li>
+            <li>Agriculture</li>
+            <li>P.E</li>
+          </ul>
+          <button class="viewmore" onclick="viewmore('subjects')">View More</button>
+        </div>
+      
+        <div class="subject sports">
+          <h2>Sports</h2>
+          <ul class="subject-list">
+            <li>Football</li>
+            <li>Athletics</li>
+            <li>Basketball</li>
+            <li>Volleyball</li>
+            <li>Netball</li>
+            <li>Swimming</li>
+          </ul>
+          <button class="viewmore" onclick="viewmore('sports')">View More</button>
+        </div>
+      
+        <div class="subject clubs">
+          <h2>Clubs & Societies</h2>
+          <ul class="subject-list">
+            <li>Science Club</li>
+            <li>Drama Club</li>
+            <li>Debate Club</li>
+            <li>Environmental Club</li>
+            <li>Scouts and Girl Guides</li>
+            <li>Music Club</li>
+            <li>Art Club</li>
+            <li>Chess Club</li>
+          </ul>
+            <button class="viewmore" onclick="viewmore('clubs')">View More</button>
+        </div>
+      
+        <div class="subject competitions">
+          <h2>Academic Competitions</h2>
+          <ul class="subject-list">
+            <li>Mathematics Contests</li>
+            <li>Spelling Bees</li>
+            <li>Science Fairs</li>
+          </ul>
+          <button class="viewmore" onclick="viewmore('competitions')">View More</button>
+        </div>
+      
+        <div class="subject music">
+          <h2>Music and Performing Arts</h2>
+          <ul class="subject-list">
+            <li>Choir</li>
+            <li>Traditional Dance</li>
+            <li>School Band</li>
+            <li>Drama and Theatre</li>
+          </ul>
+          <button class="viewmore" onclick="viewmore('music')">View More</button>
+        </div>
+      </div>
+            <div  class="facilities" >
+                <h4 id="facilities">facilities</h4>
+                <div class="class">
+                <div  class="classroom facilitybox">
+
+                    <h2>classrooms</h2>
+                    <p>Our classrooms are designed to foster an engaging and interactive learning environment. Equipped with modern teaching aids, including projectors, smart boards, and high-speed internet, each classroom supports personalized learning experiences. Our dedicated science, computer, and art labs provide students with hands-on opportunities to explore, experiment, and enhance their understanding in key subject areas.</p>
+    <div class="classimg  imageslideshow" id="classimg"> 
+        <img src="\schoolimg\istockphoto-1410950079-612x612.jpg" alt="" class="slide">
+        <img src="\schoolimg\premium_photo-1665520347153-5b54afc7575e.jpeg" alt="" class="slide"> 
+        <img src="\schoolimg\images (3).jpeg" alt="" class="slide">
+        <img src="schoolimg\istockphoto-1003228586-612x612.jpg" alt="" class="slide">
+        <img class="slide" src="\schoolimg\download.jpeg" alt="">
+        <img src="\schoolimg\images (4).jpeg" alt="" class="slide">
+<img src="schoolimg\downloadvnjnv;l.jpeg" alt="" class="slide">
+<img src="schoolimg\downloadfcnjl;mk,..jpeg" alt="" class="slide">
+<img src="schoolimg\downloadfcnjl;mk,..jpeg" alt="" class="slide">
+        <img class="slide" src="\schoolimg\images (4)rename.jpeg" alt="">
+        <img src="schoolimg\images (5).jpeg" alt="" class="slide">
+        <img src="schoolimg\istockphoto-56517070-612x612.jpg" alt="" class="slide">
+        <img src="\schoolimg\images (6).jpeg" alt="" class="slide">
+        <img src="schoolimg\istockphoto-1003228586-612x612.jpg" alt="" class="slide"> 
+        <button class="fas fa-chevron-right   rightbtn" onclick="changeslide(1)"></button>
+        <button class="fas fa-chevron-left   leftbtn" onclick="changeslide(-1)"></button>
+    </div>
+    </div>
+    <div id="playground" class="playground  facilitybox">
+        <h2>playground</h2>
+<p>At our school, we believe in the importance of physical fitness and teamwork. Our spacious sports fields are ideal for a variety of outdoor activities, from team sports like football, cricket, and rugby to individual pursuits such as athletics and tennis. We offer students the opportunity to participate in competitive sports, wellness programs, and recreational activities.</p>
+<div class="playgroundcontainer imageslideshow" id="playgroundcontainer">
+   <img class="playgroundslide" src="\playgroundimages\images (8).jpeg" alt="">
+
+  <img class="playgroundslide" src="\playgroundimages\download (1).jpeg" alt="">
+  <img class="playgroundslide" src="\playgroundimages\download.jpeg" alt="">
+  <img class="playgroundslide" src="\playgroundimages\images (7).jpeg" alt="">
+  <img class="playgroundslslide" src="\playgroundimages\images (9).jpeg" alt="">
+  <button class="fas fa-chevron-right   rightbtn" onclick="changeplaygroundslide(1)"></button>
+  <button class="fas fa-chevron-left   leftbtn" onclick="changeplaygroundslide(-1)"></button>
+</div>
+                </div>
+
+        <div class="transport  facilitybox">
+          <h2>transport</h2>
+<p>Safety and convenience are top priorities for our school transport system. We provide a fleet of well-maintained buses and vans that are equipped with GPS tracking and supervised by trained staff to ensure the safety of students on their daily commute and trips . Our transport service covers a wide radius, making it easy for students to travel to and from school comfortably and punctually. </p>
+          <div class="transportcontainer  imageslideshow" id="transportcontainer">
+            <img class="transportslide" src="\transportimages\download (6).jpeg" alt="">
+            <img class="transportslide" src="\transportimages\download (2).jpeg" alt="">
+            <img class="transportslide" src="\transportimages\download (3).jpeg" alt="">
+            <img src="transportimages/images (3).jpeg" alt="" class="transportslide">
+            <img class="transportslide" src="\transportimages\download (4).jpeg
+            " alt="">
+            <img class="transportslide" src="\transportimages\images (11).jpeg ">
+            <button class="fas fa-chevron-right   rightbtn" onclick="changetransportslide(1)"></button>
+            <button class="fas fa-chevron-left   leftbtn" onclick="changetransportslide(-1)"></button>
+          </div>
+        </div>  
+          <div class="cafeteria-canteen  facilitybox">
+            <h2>cafeteria & canteen</h2>
+<p>Our school canteen and cafeteria offer a wide range of nutritious and delicious meals that cater to diverse tastes and dietary needs. From wholesome snacks to balanced hot meals, we prioritize healthy eating habits for all students. The cafeteria is a vibrant space where students can relax, socialize, and enjoy their meals in a friendly and welcoming environment.</p>
+            <div class="cafeteriacontainer imageslideshow">
+              <img src="\cafeteriaimages\images (3)hklvuvf.jpeg" alt="" class="cafeteriaslide">
+              <img src="\cafeteriaimages\images (3)dgarg.jpeg" alt="" class="cafeteriaslide">
+              <img src="cafeteriaimages\images (3)dngn.jpeg" alt=""
+                class="cafeteriaslide">
+                <img src="cafeteriaimages\images (3)fgfdf.jpeg" alt="" class="cafeteriaslide">
+                <img src="cafeteriaimages\images (3)gjdfgv.jpeg" alt="" class="cafeteriaslide">
+                <img src="cafeteriaimages\images (3)whtykluil.jpeg"
+                alt="" class="cafeteriaslide">
+                <button class="fas fa-chevron-right   rightbtn" onclick="changecafeteriaslide(1)"></button>
+                <button class="fas fa-chevron-left   leftbtn" onclick="changecafeteriaslide(-1)"></button>
+              </div>
+          </div>
+          <div class="health facilitybox">
+            <h2>dispensary</h2>
+<p>Our school dispensary is staffed by qualified medical professionals who provide first aid, health check-ups, and medical care to students and staff. We prioritize the well-being of our school community by promoting preventive health practices and ensuring a safe and hygienic environment.In addition, we recognize the importance of mental health and offer counseling services to support students' emotional and psychological needs. Our trained counselors are available for one-on-one sessions, helping students manage stress, anxiety, and other challenges.</p>  
+          </div>
+            </div>  
+            </div>   
+            
+            <h4  id="events">events</h4>
+            <div  class="events">
+        
+              <div class="event1 event">
+                <span >trip to:<i class="trip-name"></i></span><br> <br>
+                <span >on:<i class="trip-date"></i></span> <br> <br>
+                <span >fee:<i class="trip-fee"></i>ksh</span> <br> <br>
+                <span class="trip-destination">destination:</span> <br><br>
+                <span><i class="time-taken"></i></span><br> <br>
+                <span class="trip-details">details</span> <br><br>
+              </div>
+              <div class="event2 event">
+                <span >trip to:<i class="trip-name"></i></span> <br><br>
+                <span >on:<i class="trip-date"></i></span> <br><br>
+                <span >fee:<i class="trip-fee"></i>ksh</span> <br><br>
+                <span class="trip-destination">destination:</span> <br><br>
+                <span>start time<i class="time-taken"></i></span><br><br>
+                <span class="trip-details">details</span> <br><br>
+              </div>
+              <div class="event3 event">
+                <span >event name<i class="trip-name"></i></span> <br><br>
+                <span >on:<i class="trip-date"></i></span> <br><br>
+                <span >fee:<i class="trip-fee"></i>ksh</span> <br><br>
+                <span class="trip-destination">location:</span> <br><br>
+                <span><i class="time-taken"></i></span> <br><br>
+                <span class="trip-details">details</span> <br><br>
+              </div>
+              
+            </div></div>
+          <h5 id="contacts">contact us </h5>
+            <div class="contacts" id="contacts"> <br>
+              <div class="newsletter">
+                <form >
+                <h2>subscribe to our newsletter</h2>
+                <label class="newsletterlabel" for="text">your email:</label> <br>
+                <input placeholder="input your email" id="newsletteremail" class="newsletterinput" type="email"> <br>
+                <button type="submit" class="newslettersubscribebtn" id="newslettersubscribebtn">subscribe</button>
+                </form>
+              </div> <br>
+              <div class="contactform" id="contactform">
+  <h2>Contact Form</h2>
+  <form id="contactForm">
+    <label for="name">Your name</label> <br>
+    <input class="contactformname" type="text" id="name" placeholder="Input your name" required> <br>
+    <label for="email">Your email</label> <br>
+    <input type="email" id="email" placeholder="example@gmail.com" required> <br>
+    <label for="description">Description</label> <br>
+    <input type="text" id="description" class="details" required><br>
+    <button id="submit-btn" class="contactformsubmitbtn" type="submit">Submit</button>
+  </form>
+</div>
+              <div id="response-message"></div>
+              <div class="contacticons">
+                <a href="#" class="fa fa-phone socialicons"></a> 
+                <a href="#" class="fa fa-whatsapp socialicons"></a>
+                <a href="#" class="fa fa-envelope socialicons"></a> 
+                <a href="#" class="fa fa-map-marker socialicons"></a> 
+              <a href="#" class="fa fa-facebook socialicons"></a> <br>
+                <p>email:example.spleng@gmail.com</p>
+                <p>phone:+25401234567</p>
+                <p>address:1234 spleng street</p>
+                <p>facebook: spleng school</p>
+                <p>instagram: spleng_school</p>
+                <p>twitter: spleng_school</p>
+                <p>all rights reserved</p>
+                <p><a href="">terms and conditions</a></p>
+                <p><a href="">privacy policy</a></p>
+                
+            </div>
+            </div>
+
+    <script src="./main.js"></script>
+    <script src="./config.js"></script>
+  </body>
+</html>
